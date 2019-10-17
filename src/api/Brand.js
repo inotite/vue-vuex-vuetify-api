@@ -2,7 +2,11 @@ import axios from "axios";
 
 const client = axios.create({
   baseURL: "http://private-bc245d-brewoptixv2.apiary-mock.com/",
-  json: true
+  json: true,
+  headers: {
+    Authorization: "Bearer ABCDEF",
+    "x-supplier-id": "ad51d5ac-17bb-4240-8648-c483b224b2aa"
+  }
 });
 
 export default {
